@@ -8,10 +8,11 @@ the full dataset.
 
 from __future__ import annotations
 
-import argparse
 import csv
 import json
 import math
+import argparse
+
 from pathlib import Path
 from typing import Iterable
 
@@ -39,10 +40,11 @@ COCO17_NAMES = (
     "right_ankle",
 )
 
-LEFT_SHOULDER = COCO17_NAMES.index("left_shoulder")
+
+LEFT_SHOULDER  = COCO17_NAMES.index("left_shoulder")
 RIGHT_SHOULDER = COCO17_NAMES.index("right_shoulder")
-LEFT_HIP = COCO17_NAMES.index("left_hip")
-RIGHT_HIP = COCO17_NAMES.index("right_hip")
+LEFT_HIP       = COCO17_NAMES.index("left_hip")
+RIGHT_HIP      = COCO17_NAMES.index("right_hip")
 
 
 def parse_args() -> argparse.Namespace:
@@ -58,7 +60,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--output-dir",
         type=Path,
-        default=Path("pose_estimate_data_npy_codex"),
+        default=Path("pose_estimate_data_npy"),
         help="Directory where converted .npy files will be written.",
     )
     parser.add_argument(
