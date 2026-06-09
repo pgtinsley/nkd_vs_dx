@@ -1,6 +1,6 @@
-./pose_estimate_data_*/
-./features_*/
-./tsai_*/
+pose_estimate_data_*/
+features_*/
+tsai_*/
 
 *.bak
 .gitattributes
