@@ -1,8 +1,3 @@
-pose_estimate_data_*/
-features_*/
-tsai_*/
-_archive/*
-
 *.bak
 .gitattributes
 .last_checked
